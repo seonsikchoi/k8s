@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seon-deployment
+  name: seon-test
   namespace: default
   labels:
     env: dev
 spec:
   selector:
     matchLabels:
-      app: test-network
+      app: seon-test
   template:
     metadata:
       labels:
-        app: test-network
+        app: seon-test

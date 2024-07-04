@@ -15,5 +15,6 @@ spec:
       containers:
       - name: seon-container
         image: 654654223603.dkr.ecr.ap-northeast-2.amazonaws.com/cccr:abcdefg
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
