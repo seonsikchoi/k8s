@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: seon-test
+  name: seon-service
   annotations:
     alb.ingress.kubernetes.io/healthcheck-path: "/"
   labels:

@@ -5,21 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-<<<<<<< HEAD
-      app: seonkube
-  replicas: 2
-=======
       app: seon-test
   replicas: 3
->>>>>>> 032488d (manifest yaml edit)
   template:
     metadata:
       labels:
         app: seon-test
     spec:
       containers:
-      - name: seon-test
-        image: $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/cccr:latest
-        imagePullPolicy: Always
+      - name: seon-container
+        image: 654654223603.dkr.ecr.ap-northeast-2.amazonaws.com/cccr:abcdefg
         ports:
         - containerPort: 80
