@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seondep
+spec:
+  selector:
+    matchLabels:
+      app: seonkube
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: seonkube
+    spec:
+      containers:
+      - name: seoncon
+        image: nginx
+        ports:
+        - containerPort: 80
