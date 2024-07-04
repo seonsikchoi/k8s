@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: seonser
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 8088
     targetPort: 80
