@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seondep
+  name: seon-test
 spec:
   selector:
     matchLabels:
-      app: seonkube
+      app: seon-test
   replicas: 3
   template:
     metadata:
       labels:
-        app: seonkube
+        app: seon-test
     spec:
       containers:
-      - name: seoncon
-        image: nginx
+      - name: seon-test
+        image: $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/cccr:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
