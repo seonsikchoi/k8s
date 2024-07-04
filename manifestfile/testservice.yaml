@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: seonser
+  name: seon-test
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: "/"
 spec:
   type: NodePort
   ports:
   - port: 8088
     targetPort: 80
     protocol: TCP
-    nodePort: 30088
   selector:
-    app: seonkube
+    app: seon-test
