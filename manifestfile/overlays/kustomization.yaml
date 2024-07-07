@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: 654654223603.dkr.ecr.ap-northeast-2.amazonaws.com/cccr
   newName: 654654223603.dkr.ecr.ap-northeast-2.amazonaws.com/cccr
-  newTag: latest
+  newTag: 514eade5
 resources:
 - ../base
 patchesStrategicMerge:
